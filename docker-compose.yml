@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: MongoDB
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+      MONGO_INITDB_ROOT_PASSWORD: datatrip
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+      
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: mongoadmin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: datatrip
+      ME_CONFIG_MONGODB_SERVER: mongo
+volumes:
+  mongo_data:
+    driver: local
