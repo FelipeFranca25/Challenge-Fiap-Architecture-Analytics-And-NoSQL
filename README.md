@@ -13,3 +13,5 @@ Primeiramnete criando o ambiente com containers Docker instalando Airflow e Mong
 
 Resultados Esperados:
 Automação na carga de dados e arquivo CSV salvos no banco Mongo DB de forma organizada; 
+
+https://github.com/FelipeFranca25/Challenge-Fiap-Architecture-Analytics-And-NoSQL
