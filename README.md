@@ -1,7 +1,7 @@
 Documentação do Projeto 
 
 Introdução:
-Este projeto tem como objetivo criar um fluxo de dados automatizado usando o Apache Airflow e o MongoDB. A ideia é pegar informações do arquivo CSV fornecido pela ClickBus e salvar esses dados no banco de dados NoSQL Mongo DB , como solicitado. 
+Este projeto tem como objetivo criar um fluxo de dados automatizado usando o Apache Airflow e o MongoDB. A ideia é pegar informações do arquivo CSV fornecido pela ClickBus e salvar esses dados no banco de dados NoSQL Mongo DB , como solicitado. A base de dados não foi anexada no github por questões de segurança. 
 
 Objetivos:
 Criar um fluxo que leia dados de um arquivo CSV e carregue no MongoDB usando o Airflow e python juntamente com a biblioteca PyMongo para ingestão de dados. 
